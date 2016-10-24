@@ -32,6 +32,7 @@ public class MainActivity extends BaseActivity {
                 Toast.makeText(MainActivity.this, "1<---多次点击，看看多久消失--->1", Toast.LENGTH_SHORT).show();
             }
         });
+        button1.setTypeface(Common.setFont(this));
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,5 +40,6 @@ public class MainActivity extends BaseActivity {
                 showToast("2<---多次点击，看看多久消失--->2");
             }
         });
+        button2.setTypeface(Common.setFont(this));
     }
 }
